@@ -82,7 +82,7 @@ hr {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: grey;
+  background-color: white;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -94,22 +94,23 @@ hr {
 
 /* Bump up size of carousel content */
  
-  .featurette-heading {
-    font-size: 50px;
+  /*.featurette-heading {
+    font-size: 50px;*/
   }
 
 .carousel-indicators li {
-  border: 1px solid white;
+  border: 1px solid linen;
 }
 
  .carousel-indicators li.active {
-  background-color: white;
+  background-color: linen;
  }
 
  .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
-    position: absolute;
-    top: 250%;
-
+    /*position: absolute;
+    top: 250%; */
+    background-color: inherit;
+    color: linen;
 }
 
 @media (min-width: 992px) {
@@ -143,7 +144,7 @@ hr {
 a {
 	position: relative;
     width: 20%;
-    height: 20%;
+    /*height: 20%;*/
     padding-right: 8px;
 }
    
