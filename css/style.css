@@ -76,6 +76,9 @@ hr {
   opacity: 0.18;
 }
 
+#fade {
+  opacity: 0;
+}
 
 /* Carrousel */
 

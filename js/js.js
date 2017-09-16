@@ -1,3 +1,9 @@
+// Effet menu
+
+
+// Effet fade (citation home page)
+$("#fade").fadeTo("slow", 1);
+
 // Fil Instragram
 var userFeed = new Instafeed({
 	get: 'user',
@@ -12,9 +18,18 @@ var userFeed = new Instafeed({
 });
 userFeed.run();
 
+
+// Effet machine à écrire dans le formulaire
+$('#example1').typeIt({
+     strings: 'Comment me contacter ?',
+     speed: 70,
+     autoStart: false
+});
+
 // Grille photo
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   optionspercentPosition: true,
   itemSelector: '.grid-item'
 });
+
