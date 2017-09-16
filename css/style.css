@@ -5,8 +5,6 @@ body
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
-
-
 /* Header */
 
 header {
@@ -14,76 +12,70 @@ header {
   position: fixed;
   z-index: 1;
   background-color: white;
+  padding-top: 5px;
 }
 
 h1 {
 	font-family: 'Petit Formal Script', cursive;
-  font-size: 1.9em;
+  font-size: 2em;
 }
 
 #links li a i {
   color: black;
-  font-size: 1.5em;
-}
-
-#links a {
-  padding-right: 6px;
+  font-size: 1.8em;
+  padding-right: 4px;
 }
 
 #menu li a {
   color: black;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  padding-right: 10px;
 }
 
 nav li {
-	margin-top: 25px;
-  padding-bottom: 0px;
+	margin-top: 24px;
 }
 
 header a:hover {
 	opacity: 0.7;
 	text-decoration: underline;
-}
-
-#menu a {
-	font-weight: bold;
-	padding-right: 10px;
+  font-weight: bold;
 }
 
 hr {
   border-color: #a9a8af;
+  border-width: 1.4px;
 }
-
-
 
 /* Quote */
 
 #quote {
-	margin-top: 110px;
+	margin-top: 120px;
 	margin-bottom: 20px;
 }
 
 #quote p {
-	font-size: 1.5em;
+	font-size: 1.6em;
+}
+
+#quote p i {
+  opacity: 0.18;
 }
 
 
-/* CAROUSEL */
+/* Carrousel */
 
-/* Carousel base class */
 .carousel {
   height: 500px;
   width: 800px;
   margin-bottom: 60px;
-
 }
 
-
-/* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
   background-color: grey;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -92,9 +84,7 @@ hr {
   height: 500px;
 }
 
-/* Bump up size of carousel content */
- 
-  .featurette-heading {
+.featurette-heading {
     font-size: 50px;
   }
 
@@ -102,14 +92,17 @@ hr {
   border: 1px solid white;
 }
 
- .carousel-indicators li.active {
+.carousel-indicators li.active {
   background-color: white;
  }
 
- .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+.carousel a {
+  position: absolute;
+  top : 225px;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
     position: absolute;
-    top: 250%;
-
+    top: 40px;
 }
 
 @media (min-width: 992px) {
@@ -126,6 +119,37 @@ hr {
 	padding-top: 20px;
 }
 
+#bio p {
+  font-size: 1.2em;
+}
+
+.important {
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: bold;
+}
+
+#img1 {
+  width: 238px;
+}
+
+#img2 {
+  width: 280px;
+}
+
+#bio_part1, #bio_part2 {
+  margin-bottom: 25px;
+}
+
+#bio_part2 a {
+  color: black;
+  font-weight: bold;
+}
+
+#bio_part2 a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+  font-weight: bold; 
+}
 
 /* Instagram */
 
@@ -134,17 +158,27 @@ hr {
 	margin-bottom: 20px;
 }
 
+#instagram h2 {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 1.8em;
+}
+
 #instafeed {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
   
 a {
 	position: relative;
-    width: 20%;
-    height: 20%;
-    padding-right: 8px;
+    width: 16.5%;
+    height: 16.5%;
+    padding-right: 6px;
+}
+
+a:hover {
+  opacity: 0.7;
 }
    
 img {
@@ -163,13 +197,20 @@ footer {
 }
 
 footer a {
-	color: white;
+	font-weight: bold;
+  color : white;
 }
 
 footer a:hover {
 	color: white;
 	opacity: 0.6;
 	text-decoration: none;
+}
+
+#links2 li a i {
+  padding-top: 8px;
+  font-size: 1.6em;
+  padding-right: 4px;
 }
 
 /* Media Queries */
