@@ -5,6 +5,25 @@ body
     font-family: 'Quattrocento Sans', sans-serif;
 }
 
+h1 {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.important {
+  font-family: 'Petit Formal Script', cursive;
+  font-weight: bold;
+}
+
 /* Header */
 
 header {
@@ -13,11 +32,6 @@ header {
   z-index: 1;
   background-color: white;
   padding-top: 5px;
-}
-
-h1 {
-	font-family: 'Petit Formal Script', cursive;
-  font-size: 2em;
 }
 
 #links li a i {
@@ -111,21 +125,11 @@ hr {
   }
 }
 
-
 /* Bio */
 
 #bio {
 	width: 100%;
 	padding-top: 20px;
-}
-
-#bio p {
-  font-size: 1.2em;
-}
-
-.important {
-  font-family: 'Petit Formal Script', cursive;
-  font-weight: bold;
 }
 
 #img1 {
@@ -156,11 +160,6 @@ hr {
 #instagram {
 	width: 100%;
 	margin-bottom: 20px;
-}
-
-#instagram h2 {
-  font-family: 'Petit Formal Script', cursive;
-  font-size: 1.8em;
 }
 
 #instafeed {
@@ -211,6 +210,18 @@ footer a:hover {
   padding-top: 8px;
   font-size: 1.6em;
   padding-right: 4px;
+}
+
+/* Formulaire */
+
+#form {
+  width: 100%;
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+#form img {
+  width: 197px;
 }
 
 /* Media Queries */
