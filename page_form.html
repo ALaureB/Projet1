@@ -7,6 +7,8 @@
 
 <head>
     <meta charset="utf-8" />
+    <!--Captcha-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- ici rajouter l'appel des polices -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/integration.css" />
@@ -48,6 +50,7 @@
             <label for="message">Votre message</label><br />
             <textarea class="form-control" id="message" rows="3" placeholder="Vous pouvez taper votre message ici"></textarea>
         </div><br />
+        <div class="g-recaptcha" data-sitekey="6LetAjEUAAAAABSAKAEjRFQXxoAy-gL8Lz-RIqJe"></div>
 
         <button type="submit" class="btn btn-default">Envoyer</button>
 
