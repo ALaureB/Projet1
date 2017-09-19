@@ -1,8 +1,12 @@
 // Effet menu
+$(window).scroll(function () {
+       $(this).scrollTop() > 1 ? $("header").css("padding-top", "0px") : $("header").css("padding-top", "15px")
+       $(this).scrollTop() > 1 ? $("header").css("background-color", "#f9fafc") : $("header").css("background-color", "white")
+       $(this).scrollTop() > 1 ? $("#line").css("display", "none") : $("#line").css("display", "block")
+    });
 
-
-// Effet fade (citation home page)
-$("#fade").fadeTo("slow", 1);
+// Effet citation home page
+$("#quote").fadeTo("slow", 1);
 
 // Fil Instragram
 var userFeed = new Instafeed({
@@ -18,8 +22,7 @@ var userFeed = new Instafeed({
 });
 userFeed.run();
 
-
-// Effet machine à écrire dans le formulaire
+// Effet machine à écrire formulaire
 $('#example1').typeIt({
      strings: 'Comment me contacter ?',
      speed: 70,
