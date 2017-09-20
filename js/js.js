@@ -26,9 +26,24 @@ var userFeed = new Instafeed({
 });
 userFeed.run();
 
+// Effet machine à écrire parisiens
+$('#example2').typeIt({
+     strings: '~ Les parisiens ~',
+     speed: 70,
+     autoStart: false
+});
+
+// Effet machine à écrire rues
+$('#example3').typeIt({
+     strings: '~ Les rues ~',
+     speed: 70,
+     autoStart: false
+});
+
+
 // Effet machine à écrire formulaire
 $('#example1').typeIt({
-     strings: 'Comment me contacter ?',
+     strings: '~ Comment me contacter ~',
      speed: 70,
      autoStart: false
 });
