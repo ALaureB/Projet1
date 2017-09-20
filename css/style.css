@@ -2,12 +2,14 @@
 
 body
 {
-    font-family: 'Playfair Display', serif;
-    color: black;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: black;
 }
 
 h2 {
   font-size: 1.8em;
+  font-weight: 900;
 }
 
 p {
@@ -16,6 +18,7 @@ p {
 
 .important {
   font-weight: bold;
+  font-style: italic;
 }
 
 /* Header */
@@ -23,85 +26,84 @@ p {
 header {
   width: 100%;
   position: fixed;
-  z-index: 1;
   background-color: white;
   padding-top: 15px;
+  line-height: 0;
+  z-index: 16;
 }
 
-#logo a {
-  font-size: 2.4em;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+#logo img {
+  height: 30px;
 }
 
-#links li a i {
-  color: black;
-  font-size: 1.8em;
-  margin-right: 4px;
+#links img {
+  width: 30px;
+  height: 30px;
+}
+
+#links li:hover {
+  opacity: 0.7;
+}
+
+#menu li {
+  padding-top: 14px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 #menu li a {
   color: black;
   font-size: 1.2em;
-  margin-right: 20px;
-}
-
-nav li {
-	margin-top: 14px;
-}
-
-#logo a:hover {
-  opacity: 1;
-}
-
-#links li a i:hover {
-	opacity: 0.7;
   text-decoration: none;
 }
 
-#menu li a:hover {
-  opacity: 0.7;
-  text-decoration: underline;
+#menu li:hover {
+  background: url("../img/typo/glyph-lien.jpg") center bottom no-repeat;
+}
+
+#line hr {
+  margin : 0;
 }
 
 hr {
   border-color: #a9a8af;
-  border-width: 1.4px;
 }
 
 /* Quote */
 
 #quote {
-	padding-top: 110px;
+	width: 100%;
+  padding-top: 110px;
 	margin-bottom: 20px;
+  opacity: 0;
 }
 
 #quote p {
-	font-size: 5em;
-  font-weight: bold;
-  padding: 0;
+	font-size: 7em;
+  font-weight: 900;
+  line-height: 1;
 }
 
 .small {
-  font-size: 0.5em;
-}
-
-#quote {
-  opacity: 0;
+  font-weight: 400;
+  font-size: 0.25em;
 }
 
 /* Carrousel */
 
+#carousel {
+  width: 100%;
+}
+
 .carousel {
-  height: 500px;
+  height: 519px;
   width: 800px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .carousel .item {
-  height: 500px;
-  background-color: grey;
+  width: 800px;
+  height: 519px;
 }
 
 .carousel-inner > .item > img {
@@ -109,56 +111,58 @@ hr {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 519px;
 }
 
-.featurette-heading {
-    font-size: 50px;
-  }
-
 .carousel-indicators li {
-  border: 1px solid white;
+  border: 1px solid black;
+  position: relative;
+  top: 10px;
 }
 
 .carousel-indicators li.active {
-  background-color: white;
+  background-color: black;
  }
-
-.carousel a {
-  position: absolute;
-  top : 225px;
-}
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
-    position: absolute;
-    top: 40px;
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
 
 /* Bio */
 
 #bio {
 	width: 100%;
-	padding-top: 20px;
 }
 
-#img1 {
-  width: 238px;
+#bonjour {
+  background-color: black;
+  color: white;
+  font-weight: 900;
+  font-size: 2.8em;
+  line-height: 2;
+}
+
+#bio_part1 {
+  margin-top: 20px;
+}
+
+#img1, #img3 {
+  width: 323px;
+  height: 368px;
 }
 
 #img2 {
-  width: 280px;
+  width: 142px;
+  height: 267px;
 }
 
 #bio_part1, #bio_part2 {
   margin-bottom: 25px;
 }
 
-#bio_part2 a {
+#bio_part2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bio_part3 a {
   color: black;
   font-weight: bold;
 }
@@ -237,4 +241,9 @@ footer a:hover {
 }
 
 /* Media Queries */
+
+@media (min-width: 992px) {
+  {
+  }
+}
 

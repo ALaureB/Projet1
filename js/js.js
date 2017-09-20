@@ -1,9 +1,13 @@
 // Effet menu
-$(window).scroll(function () {
-       $(this).scrollTop() > 1 ? $("header").css("padding-top", "0px") : $("header").css("padding-top", "15px")
-       $(this).scrollTop() > 1 ? $("header").css("background-color", "#f9fafc") : $("header").css("background-color", "white")
-       $(this).scrollTop() > 1 ? $("#line").css("display", "none") : $("#line").css("display", "block")
-    });
+//(window).scroll(function () {
+	//$(this).scrollTop() > 1 ? $("header").css("margin-top", "5px") : $("header").css("margin-top", "20px")
+	// $(this).scrollTop() > 1 ? $("#line").css("display", "none") : $("#line").css("display", "block")
+//});//
+
+// Vitesse carrousel
+$('.carousel').carousel({
+  interval: 2500
+})
 
 // Effet citation home page
 $("#quote").fadeTo("slow", 1);
