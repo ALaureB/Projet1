@@ -1,61 +1,129 @@
-<!-- WCS Paris late 2017 Codingk8 Projet 1 Eugène à Paris Block formulaire Contact v1 -->
-
 <!DOCTYPE html>
-<html lang="eng">
 
-<!-- La balise Head -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<head>
-    <meta charset="utf-8" />
+    <title>Contactez-moi</title>
+    <link rel="icon" type="image/png" href="img/typo/favicon.png" /s>
+
+    <!-- Bootstrap & CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Police & icônes -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
     <!--Captcha-->
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- ici rajouter l'appel des polices -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/integration.css" />
-    <title>Tajam</title>
-</head>
 
-<!-- Fin de la balise Head -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
+  <body>
 
-    <h2>Comment me contacter</h2>
-
-    <p>Si vous souhaitez me contacter pour me poser une question ou me faire part de vos remarques ou suggestions, vous pouvez me laisser un message dans le formulaire ci-dessous.</p>
-    <p>J'ai hâte de vous lire et je tenterai de vous répondre rapidement.</p>
-    <p>Parisiennement vôtre.</p><br />
-    <p>Eugène</p><br />
-
-    <img src="../images/bnf_photo_eugene_atget_1890_ti.png" alt="Eugène Atget à la BNF" /><br />
-    <br />
-
-    <form>
-
-        <div class="form-group">
-            <label for="nom">Votre nom</label>
-            <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+  <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="row">
+          <div id="logo" class="col-xs-2 text-center"><a href="index.html"><img src="img/typo/logo.svg" alt="logo" /></a></div>
+          <ul id="links" class="col-xs-4 list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/explore/tags/eugeneatget/"><img src="img/typo/instagram.svg" alt="instagram"/></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/search/str/Google%2BArts%2B%2526%2BCulture%2Beug%25C3%25A8ne%2Batget/stories-keyword/stories-public?esd=eyJlc2lkIjoiUzpfSTE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiLCJwc2lkIjp7IjE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiOiJVenBmU1RFNE16YzBPVEkzTkRrNU1ETXdNVG81TWpBNU5Ea3pNRFEyTURNMk1qUT0ifSwiY3JjdCI6Im1lZGlhIiwiY3NpZCI6IjY1ZWNhOTk0MzFiMWQ1OGFmNjhjYTkzMjc2NDkyNzEyIn0%3D"><img src="img/typo/facebook.svg" alt="Facebook"/></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/hashtag/eugeneatget"><img src="img/typo/twitter.svg" alt="Twitter"/></a></li>
+            <li class="list-inline-item"><a href="https://fr.pinterest.com/mnabata/eugene-atget/"><img src="img/typo/pinterest.svg" alt="Pinterest"/></a></li>
+          </ul>
+          <ul id="menu" class="list-inline col-xs-6 text-right">
+            <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+            <li class="list-inline-item"><a href="lesparisiens.html">Les parisiens</a></li>
+            <li class="list-inline-item"><a href="lesrues.html">Les rues</a></li>
+            <li class="list-inline-item"><a href="page_form.html">Contactez-moi</a></li>
+          </ul>
+        </nav>
+        <div class="row" id="line">
+          <div class="col-xs-12 text-center"><hr/></div>
         </div>
+      </div>
+    </header>
+  <!-- /. Header -->
 
-        <div class="form-group">
-            <label for="adresse mail">Votre adresse mail</label>
-            <input type="email" class="form-control" id="adresse mail" placeholder="Votre adresse mail">
+
+<!-- Formulaire -->
+    <section>
+      <div class="container" id="form">
+        <div class="row"><h2 class="col-xs-12 text-center" id="example1"><h2><br><br></div>
+        <div class="row">
+            <p class="col-xs-8 col-xs-offset-2 text-justify">Si vous souhaitez me contacter pour me poser une question ou me faire part de vos remarques ou suggestions, vous pouvez me laisser un message dans le formulaire ci-dessous.<br><br>
+            J'ai hâte de vous lire et je tenterai de vous répondre rapidement.<br><br>Parisiennement vôtre.<br><br>
+            <span class="important">Eugène</span></p>
         </div>
+        <div class="row"><img class="col-xs-2 col-xs-offset-5" src="img/bnf_photo_eugene_atget_1890_ti.png" alt="Eugène Atget" /></div>
 
-        <div class="form-group">
-            <label for="objet">L'objet de votre message</label>
-            <input type="text" class="form-control" id="nom" placeholder="L'objet de votre message">
+        <div class="row">
+          <form class="col-xs-8 col-xs-offset-2">
+            <div class="form-group">
+                <label for="nom">Votre nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+                <label for="adresse mail">Votre adresse mail</label>
+                <input type="email" class="form-control" id="adresse mail" placeholder="Votre adresse mail">
+            </div>
+            <div class="form-group">
+                <label for="objet">L'objet de votre message</label>
+                <input type="text" class="form-control" id="nom" placeholder="L'objet de votre message">
+            </div>
+            <div>
+                <label for="message">Votre message</label><br />
+                <textarea class="form-control" id="message" rows="3" placeholder="Vous pouvez taper votre message ici"></textarea>
+            </div><br />
+            <div class="g-recaptcha" data-sitekey="6LetAjEUAAAAABSAKAEjRFQXxoAy-gL8Lz-RIqJe"></div>
+            <button type="submit" class="btn btn-default">Envoyer</button>
+            </form>  
         </div>
+      </div>
+    </section>    
+<!-- /. Formulaire -->
 
-        <div>
-            <label for="message">Votre message</label><br />
-            <textarea class="form-control" id="message" rows="3" placeholder="Vous pouvez taper votre message ici"></textarea>
-        </div><br />
-        <div class="g-recaptcha" data-sitekey="6LetAjEUAAAAABSAKAEjRFQXxoAy-gL8Lz-RIqJe"></div>
+<!-- Instagram -->   
+    <section id="instagram">
+      <div class="container">
+        <div class="row"><h2 class="col-xs-12 text-center">~ Retrouvez-moi sur Instagram ~<h2></div>
+        <div class="row">
+            <div id="instafeed" class="col-xs-12"></div>
+        </div>
+      </div>
+    </section>
+  <!-- /. Instagram -->
 
-        <button type="submit" class="btn btn-default">Envoyer</button>
+  <!-- Footer --> 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <p class="col-xs-12 text-center">Eugène Atget 1927 - Photos dans le domaine public numérisées par <a href="https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Atget_(French_-_Chiffonier_(Ragpicker)_-_Google_Art_Project.jpg?uselang=fr">Google Art Projet</a><br>Made with <i class="fa fa-heart" aria-hidden="true"></i> for <a href="https://wildcodeschool.fr/">Wild Code School</a></p>
+        </div>
+      </div>
+    </footer>
+  <!-- /. Footer -->
 
-    </form>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+  <script src="js/js.js"></script>
+   
+  </body>
 
-</body>
 
 </html>
