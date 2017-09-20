@@ -25,6 +25,18 @@ p {
   font-style: italic;
 }
 
+/* Surlignage personnalisé */
+
+::selection{
+  background-color: #444;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #444;
+  color: white;
+}
+
 /* Header */
 
 header {
