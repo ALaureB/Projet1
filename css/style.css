@@ -78,8 +78,8 @@ header {
 #menu li:hover {
   background: url("../img/typo/glyph-lien.jpg") center bottom no-repeat;
   transition: .8s ease;
-
 }
+
 .navactive {
   background: url("../img/typo/glyph-lien.jpg") center bottom no-repeat;
 }
@@ -352,9 +352,97 @@ label {
   }
 }
 
-/* Media Queries */
+/* Burger menu */
 
-@media (min-width: 992px) {
-  {
+#burger_icon {
+  visibility: hidden;
+  color: black;
+  padding-top: 6px;
+}
+
+.menuburger {
+  padding-top: 10px;
+  background : white;
+  height: 100vh;
+  position : fixed;
+  width: 200px;
+  right: -200px;
+  top: 0;
+  transition: right .5s ease;
+  z-index: 17;
+}
+
+.links img {
+  width: 25px;
+  height: 25px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menuburger ul {
+  padding : 15px;
+}
+
+.menuburger li {
+  list-style-type: none;
+  height: 40px;
+}
+
+.menuburger li a {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.menuburger li:hover {
+  font-weight: 900;
+}
+
+.tilde {
+  font-weight: 900;
+}
+
+.menuburger.open {
+  right: 0; 
+}
+
+.close {
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.navactive2 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  
+  #menu, #line, #links {
+    display:none;
+  }
+  
+  #burger_icon {
+    visibility: visible;
+  }
+  
+  #burger_icon:hover {
+  cursor:pointer;
+  }
+
+  #logo img {
+  width: 80px;
+  height: 30px;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+  .menuburger {
+    display: none;
   }
 }
