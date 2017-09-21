@@ -59,6 +59,7 @@ header {
 
 #links li:hover {
   opacity: 0.7;
+  transition: .8s ease;
 }
 
 #menu li {
@@ -75,6 +76,8 @@ header {
 
 #menu li:hover {
   background: url("../img/typo/glyph-lien.jpg") center bottom no-repeat;
+  transition: .8s ease;
+
 }
 .navactive {
   background: url("../img/typo/glyph-lien.jpg") center bottom no-repeat;
@@ -185,6 +188,7 @@ hr {
   opacity: 0.7;
   text-decoration: underline;
   font-weight: bold;
+  transition: .8s ease;
 }
 
 /* Instagram */
@@ -208,6 +212,7 @@ a {
 
 a:hover {
   opacity: 0.7;
+  transition: .8s ease;
 }
 
 img {
@@ -235,6 +240,7 @@ footer a:hover {
 	color: black;
   opacity: 0.6;
 	text-decoration: none;
+  transition: .8s ease;
 }
 
 /* Formulaire */
