@@ -357,7 +357,10 @@ label {
 #burger_icon {
   visibility: hidden;
   color: black;
-  padding-top: 6px;
+  position: fixed;
+  top: 60px;
+  left: 30px;
+
 }
 
 .menuburger {
