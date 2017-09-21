@@ -91,7 +91,6 @@ hr {
 /* Quote */
 
 #quote {
-	width: 100%;
   padding-top: 110px;
 	margin-bottom: 20px;
   opacity: 0;
@@ -112,10 +111,6 @@ hr {
 
 #myCarousel {
   margin: auto;
-}
-
-#carousel {
-  width: 100%;
 }
 
 .carousel {
@@ -148,10 +143,6 @@ hr {
  }
 
 /* Bio */
-
-#bio {
-	width: 100%;
-}
 
 #bonjour {
   background-color: black;
@@ -199,12 +190,10 @@ hr {
 /* Instagram */
 
 #instagram {
-	width: 100%;
 	margin-bottom: 20px;
 }
 
 #instafeed {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -230,7 +219,6 @@ img {
 /* Footer */
 
 footer {
-	width: 100%;
 	padding-top: 10px;
 }
 
@@ -241,7 +229,6 @@ footer p {
 footer a {
 	font-weight: bold;
   color: black;
-
 }
 
 footer a:hover {
@@ -253,7 +240,6 @@ footer a:hover {
 /* Formulaire */
 
 #form {
-  width: 100%;
   padding-top: 80px;
   margin-bottom: 20px;
 }
