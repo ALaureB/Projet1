@@ -8,8 +8,9 @@ $('.carousel').carousel({
   interval: 2500
 })
 
-// Effet citation home page
+// Effet citation
 $(".quote").fadeTo("slow", 1);
+$("#quote").fadeTo("slow", 1);
 
 // Fil Instragram
 var userFeed = new Instafeed({

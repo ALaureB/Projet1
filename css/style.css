@@ -102,11 +102,22 @@ hr {
   padding-top: 110px;
 	margin-bottom: 20px;
   opacity: 0;
-.
 }
 
 .quote p {
 	font-size: 7em;
+  font-weight: 900;
+  line-height: 1;
+}
+
+#quote {
+  padding-top: 140px;
+  margin-bottom: 20px;
+  opacity: 0;
+}
+
+#quote p {
+  font-size: 7em;
   font-weight: 900;
   line-height: 1;
 }
