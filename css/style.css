@@ -98,13 +98,14 @@ hr {
 
 /* Quote */
 
-#quote {
+.quote {
   padding-top: 110px;
 	margin-bottom: 20px;
   opacity: 0;
+.
 }
 
-#quote p {
+.quote p {
 	font-size: 7em;
   font-weight: 900;
   line-height: 1;
@@ -298,12 +299,14 @@ label {
   width: 100% !important;
   height: auto !important;
   padding: 7px;
-  /*background-color: rgba(46, 132, 206, 0.7);*/
   opacity: 0.7;
   opacity: 0.2;
   transition: .8s ease;
   background-color: white;
 }
+
+
+
 
 .containertest {
   position: relative;
