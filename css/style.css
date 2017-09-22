@@ -388,8 +388,9 @@ label {
   visibility: hidden;
   color: black;
   position: fixed;
-  top: 60px;
-  left: 30px;
+  top: 15px;
+  right: 30px;
+  padding: 10px;
 
 }
 
@@ -443,10 +444,12 @@ label {
   right: 0; 
 }
 
-.close {
+.menuburger li a.close {
   position: relative;
   top: 0;
   right: 0;
+  font-size: 20px;
+  color: black;
 }
 
 .navactive2 {
