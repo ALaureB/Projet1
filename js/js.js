@@ -9,7 +9,7 @@ $('.carousel').carousel({
 })
 
 // Effet citation home page
-$("#quote").fadeTo("slow", 1);
+$(".quote").fadeTo("slow", 1);
 
 // Fil Instragram
 var userFeed = new Instafeed({
