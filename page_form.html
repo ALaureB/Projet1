@@ -35,14 +35,32 @@
     <header>
       <div class="container-fluid">
         <nav class="row">
-          <div id="logo" class="col-xs-2 text-center"><a href="index.html"><img src="img/typo/logo.svg" alt="logo" /></a></div>
-          <ul id="links" class="col-xs-4 list-inline">
+          <div id="logo" class="col-xs-2 text-center"><a href="index.html"><img src="img/typo/logo.svg" alt="logo" />
+          </a></div>
+          <ul id="links" class="col-xs-2 list-inline">
             <li class="list-inline-item"><a href="https://www.instagram.com/explore/tags/eugeneatget/"><img src="img/typo/instagram.svg" alt="instagram"/></a></li>
             <li class="list-inline-item"><a href="https://www.facebook.com/search/str/Google%2BArts%2B%2526%2BCulture%2Beug%25C3%25A8ne%2Batget/stories-keyword/stories-public?esd=eyJlc2lkIjoiUzpfSTE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiLCJwc2lkIjp7IjE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiOiJVenBmU1RFNE16YzBPVEkzTkRrNU1ETXdNVG81TWpBNU5Ea3pNRFEyTURNMk1qUT0ifSwiY3JjdCI6Im1lZGlhIiwiY3NpZCI6IjY1ZWNhOTk0MzFiMWQ1OGFmNjhjYTkzMjc2NDkyNzEyIn0%3D"><img src="img/typo/facebook.svg" alt="Facebook"/></a></li>
             <li class="list-inline-item"><a href="https://twitter.com/hashtag/eugeneatget"><img src="img/typo/twitter.svg" alt="Twitter"/></a></li>
             <li class="list-inline-item"><a href="https://fr.pinterest.com/mnabata/eugene-atget/"><img src="img/typo/pinterest.svg" alt="Pinterest"/></a></li>
           </ul>
-          <ul id="menu" class="list-inline col-xs-6 text-right">
+          <!-- Burger menu -->
+          <div class="col-xs-1 text-center" id="burger_icon"><p><i class="fa fa-bars" aria-hidden="true"></i></p></div>
+          <div class="menuburger">
+            <ul>
+              <li><a href="#" class="close">x</a></li>
+              <li><p class="text-center"><a href="index.html"><span class="tilde">~</span> Accueil <span class="tilde">~</span></a></p></li>
+              <li><p class="text-center"><a href="lesparisiens.html"><span class="tilde">~</span> Les parisiens <span class="tilde">~</span></a></p></li>
+              <li><p class="text-center"><a href="lesrues.html"> <span class="tilde">~</span> Les rues <span class="tilde">~</span></a></li>
+              <li><p class="text-center navactive2"><a href="page_form.html"><span class="tilde">~</span> Contactez-moi <span class="tilde">~</span></a></p></li>
+              <li class="links">
+                <a href="https://www.instagram.com/explore/tags/eugeneatget/"><img src="img/typo/instagram.svg" alt="instagram"/></a>
+                <a href="https://www.facebook.com/search/str/Google%2BArts%2B%2526%2BCulture%2Beug%25C3%25A8ne%2Batget/stories-keyword/stories-public?esd=eyJlc2lkIjoiUzpfSTE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiLCJwc2lkIjp7IjE4Mzc0OTI3NDk5MDMwMTo5MjA5NDkzMDQ2MDM2MjQiOiJVenBmU1RFNE16YzBPVEkzTkRrNU1ETXdNVG81TWpBNU5Ea3pNRFEyTURNMk1qUT0ifSwiY3JjdCI6Im1lZGlhIiwiY3NpZCI6IjY1ZWNhOTk0MzFiMWQ1OGFmNjhjYTkzMjc2NDkyNzEyIn0%3D"><img src="img/typo/facebook.svg" alt="Facebook"/></a>
+                <a href="https://twitter.com/hashtag/eugeneatget"><img src="img/typo/twitter.svg" alt="Twitter"/></a>
+                <a href="https://fr.pinterest.com/mnabata/eugene-atget/"><img src="img/typo/pinterest.svg" alt="Pinterest"/></a></li>
+            </ul>
+          </div>
+          <!-- /. Burger menu -->
+          <ul id="menu" class="list-inline col-xs-7 text-right">
             <li class="list-inline-item"><a href="index.html">Accueil</a></li>
             <li class="list-inline-item"><a href="lesparisiens.html">Les parisiens</a></li>
             <li class="list-inline-item"><a href="lesrues.html">Les rues</a></li>
@@ -83,7 +101,7 @@
             </div>
             <div>
                 <label for="message">Votre message</label><br />
-                <textarea class="form-control" id="message" rows="3" placeholder="Vous pouvez taper votre message ici"></textarea>
+                <textarea class="form-control" id="message" rows="6" placeholder="Vous pouvez taper votre message ici" maxlength="400"></textarea>
             </div><br />
             <div class="g-recaptcha" data-sitekey="6LetAjEUAAAAABSAKAEjRFQXxoAy-gL8Lz-RIqJe"></div>
             <button type="submit" class="btn btn-default">Envoyer</button>

@@ -1,8 +1,7 @@
-// Effet menu
-//(window).scroll(function () {
-	//$(this).scrollTop() > 1 ? $("header").css("margin-top", "5px") : $("header").css("margin-top", "20px")
-	// $(this).scrollTop() > 1 ? $("#line").css("display", "none") : $("#line").css("display", "block")
-//});//
+// Burger menu
+$('#burger_icon, .close').on('click',function(){
+   $('.menuburger').toggleClass('open');
+}); 
 
 // Vitesse carrousel
 $('.carousel').carousel({
@@ -39,7 +38,6 @@ $('#example3').typeIt({
      speed: 70,
      autoStart: false
 });
-
 
 // Effet machine à écrire formulaire
 $('#example1').typeIt({
